@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color:rgb(28, 28, 83);
+}
+.container {
+    display: flex;
+    width: 1440px;
+    margin: 0px auto;
+}
+.content__wrapper {
+    flex-direction: column;
+    display: flex;
+    align-items:flex-start;
+    margin: 45px 0px 0px 20px;
+}
+.content_search {
+    display: flex;
+}
+.search__box {
+    cursor: pointer;
+    background:  transparent;
+    border: transparent;
+    outline: none;
+    font-size: 20px;
+    width: 600px;
+    color: white;
+}
+.search__img {
+    margin: 0px 10px 0px 0px;
+    width: 35px;
+    height: 35px;
+    color: white;
+}
+input:focus::placeholder {
+    color: transparent;
+    transition: 0.3s;
+}
+
+/* Установка верхних элементов в меню */
+.nav__menu {
+flex-direction: column;
+display: flex;
+align-items:center;
+background-color:rgb(48, 48, 139);
+width: 100px;
+height: 1000px;
+border-radius: 50px;
+overflow: hidden;
+}
+.nav__menu div{ 
+    margin-top: 40px;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+}
+.nav__film__1{  
+   background: url(/img/black_film_icon.png);
+}
+.nav__film__2{
+   background: url(/img/black_menu_icon.png); 
+}
+.nav__film__3{
+   background: url(/img/black_bookmark.png)
+}
+.nav__film__4{
+    background: url(/img/black_favorite.png)
+}
+
+/* Установка профиля */
+
+.nav__menu .nav__profile {
+    margin-top: auto;
+    margin-bottom: 40px;
+    border: solid 1px black;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+/* Ховер на меню слева */
+
+.nav__menu div:hover {
+    cursor: pointer;
+    transition:  1s;
+    background-size: cover;
+}
+.nav__film__1:hover {
+    background: url('/img/white_film_icon.png');
+}
+.nav__film__2:hover{
+    background: url('/img/white_menu_icon.png');
+}
+.nav__film__3:hover{
+    background: url('/img/white_bookmark.png');
+}
+.nav__film__4:hover{
+    background: url('/img/white_favorite.png');
+}
+
+/* Трендинг верхняя часть сайта */
+
+.trending_name {
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 3px;
+}
+.trending__contains {
+    display: flex; 
+}
+.trending__films {
+    width: 300px;
+    height: 200px;
+    background-color:white;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-size: cover;
+    overflow: hidden;
+}
+.trending__films__text {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.trending__films__bookmark {
+    margin: 20px 0px 0px 20px;
+    background: url(/img/black_bookmark.png);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    border: 1px solid grey;
+    border-radius: 10px;
+
+}
+.trending__films__annotation {
+    margin: 110px 0px 0px 15px;
+    font-size: small;
+}
+.trending__films__name {
+    margin: 0px 0px 0px 15px;
+    font-size: larger;
+    
+}
