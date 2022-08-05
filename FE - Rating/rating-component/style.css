@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+body {
+  background: hsl(216, 12%, 8%);
+}
+
+.block {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.wrapper {
+  background-color: hsl(212, 30%, 12%);
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.wrapper__star {
+  padding: 10px;
+  margin: 15px;
+  border-radius: 50%;
+  background-color: hsl(215, 28%, 16%);
+}
+
+.wrapper__bigText {
+  color: hsl(217, 12%, 63%);
+  font-family: "Overpass", sans-serif;
+  margin: 0 0 10px 15px;
+  font-size: larger;
+}
+
+.wrapper__smallText {
+  color: hsl(216, 12%, 54%);
+  margin: 0px 10px 10px 15px;
+  font-family: "Overpass", sans-serif;
+}
+
+.wrapper__marks {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wrapper__marks_score {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: hsl(215, 28%, 16%);
+  border-radius: 50%;
+  text-align: center;
+  color: hsl(216, 12%, 54%);
+  transition: 0.3s;
+}
+
+.wrapper__button {
+  margin: 15px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 20px;
+  padding: 10px;
+  font-family: "Overpass", sans-serif;
+  transition: 0.5s;
+}
+
+.wrapper__button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.wrapper__marks_score:hover {
+  background: hsl(217, 12%, 63%);
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.clicked {
+  width: 40px;
+  height: 40px;
+  transition: 0.5s;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+  pointer-events: none;
+}
