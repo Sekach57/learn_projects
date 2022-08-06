@@ -7,12 +7,13 @@
   }
 
 body {
-    background-color:rgb(28, 28, 83);
+    background-color:hsl(224,32%,9%);
+    overflow: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .container {
     display: flex;
     width: 1440px;
-    margin: 0px auto;
 }
 .content__wrapper {
     flex-direction: column;
@@ -48,10 +49,10 @@ input:focus::placeholder {
 flex-direction: column;
 display: flex;
 align-items:center;
-background-color:rgb(48, 48, 139);
+background-color:hsl(223,36%,14%);
 width: 100px;
-height: 1000px;
-border-radius: 50px;
+height: 1100px;
+border-radius: 30px;
 overflow: hidden;
 }
 .nav__menu div{ 
@@ -80,9 +81,12 @@ overflow: hidden;
 .nav__menu .nav__profile {
     margin-top: auto;
     margin-bottom: 40px;
-    border: solid 1px black;
+    border: solid 1px white;
     border-radius: 50%;
     background-color: transparent;
+    background: url(/img/1920.png);
+    background-size: cover;
+
 }
 
 /* Ховер на меню слева */
@@ -110,15 +114,14 @@ overflow: hidden;
 .trending_name {
     font-size: 1.5rem;
     color: white;
-    font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 3px;
 }
 .trending__contains {
     display: flex; 
 }
 .trending__films {
-    width: 300px;
-    height: 200px;
+    width: 600px;
+    height: 300px;
     background-color:white;
     margin-right: 20px;
     border-radius: 20px;
@@ -128,24 +131,114 @@ overflow: hidden;
 .trending__films__text {
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-.trending__films__bookmark {
-    margin: 20px 0px 0px 20px;
-    background: url(/img/black_bookmark.png);
-    width: 20px;
-    height: 20px;
-    background-size: cover;
-    border: 1px solid grey;
-    border-radius: 10px;
 
 }
+.trending__films__bookmark {
+    
+    margin: 20px 0px 0px 530px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid grey;
+    border-radius: 30px;
+    background: url(/img/white_bookmark.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(12, 12, 12, 0.5);
+}
 .trending__films__annotation {
-    margin: 110px 0px 0px 15px;
+    margin: 180px 0px 0px 15px;
     font-size: small;
+    color:rgb(255, 255, 255);
+    text-shadow: #000 0.5px 0 0px, #000 0 0.5px 0px, #000 -0.5px 0 0px, #000 0 -0.5px 0px;
+
 }
 .trending__films__name {
     margin: 0px 0px 0px 15px;
     font-size: larger;
-    
+    color:white;
+    text-shadow: #000 0.5px 0 0px, #000 0 0.5px 0px, #000 -0.5px 0 0px, #000 0 -0.5px 0px;
+
+}
+
+/* Каждый отдельный фильм */
+#bladeRunner {
+    background-image: url(/postersFilm/blade-runner-2049_7494_1600x1200.jpg);
+}
+#rickandmorty {
+    background-image: url(/postersFilm/rick-and-morty_f56d_1600x1200.jpg);
+}
+#thehobbit {
+    background-image: url(/postersFilm/the-hobbit-the-battle-of-the-five-armies_7c88_1440x900.jpg)
+}
+/* Каждый отдельный фильм из рекомендованных*/
+#godfather {
+    background-image:url(/postersFilm/thegodfather.jpg)
+}
+#angrymen12 {
+    background-image: url(/postersFilm/12angrymen.jpg)
+}
+#apocalypsenow {
+    background-image: url(/postersFilm/apocalypsenow.jpg)
+}
+#schindlerslist {
+    background-image: url(/postersFilm/schindlerslist.jpg)
+}
+#thgoodthebadandtheugly {
+    background-image: url(/postersFilm/thgoodthebadandtheugly.jpg)
+}
+#lottrotk {
+    background-image: url(/postersFilm/thelordoftherings-thereturnoftheking.jpg)
+}
+#thegodfathertwo {
+    background-image: url(/postersFilm/thegodfathertwo.jpg)
+}
+#spiritedaway {
+    background-image:url(/postersFilm/spiritedaway.jpg)
+}
+/* Рекомендованные */
+.reccomended__films__bookmark {
+    margin: 20px 0px 0px 305px;
+    width: 25px;
+    height: 25px;
+    border: 2px solid grey;
+    border-radius: 30px;
+    background: url(/img/white_bookmark.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(12, 12, 12, 0.5);
+}
+.content__rec {
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 3px;
+    margin: 26.5px 0px 0px 0px;
+}
+.reccomended__contains {
+    display:flex;
+    max-width: 1500px;
+    flex-wrap: wrap;
+}
+.reccomended__films {
+    margin-top: 20px;
+    width: 350px;
+    height: 240px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-size: cover;
+    overflow: hidden;
+}
+.reccomended__films__annotation {
+    margin: 130px 0px 0px 15px;
+    font-size: small;
+    color:rgb(255, 255, 255);
+    text-shadow: #000 0.5px 0 0px, #000 0 0.5px 0px, #000 -0.5px 0 0px, #000 0 -0.5px 0px;
+}
+.reccomended__films__name {
+    text-shadow: #000 0.5px 0 0px, #000 0 0.5px 0px, #000 -0.5px 0 0px, #000 0 -0.5px 0px;
+    margin-left: 15px;
+    font-size: larger;
+    color:white;
 }
